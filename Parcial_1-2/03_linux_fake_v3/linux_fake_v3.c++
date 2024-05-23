@@ -3,9 +3,14 @@
 
 using namespace std;
 
-struct Users{
+struct File
+{
+    list<string> Files;
+};
+struct Users
+{
     string User;
-    list<string> FIles;
+    File Files;
 };
 
 
@@ -13,7 +18,7 @@ int main(){
 
     list<Users> users;
     Users user;
-    string username;
+    string username, localUser;
     int salir, menu;
     string tmp;
 
@@ -22,7 +27,18 @@ int main(){
     cout << "Enter username: ";
     cin >> username;
 
+    localUser = &user;
+    localUSer->User = username;
+
+    for(auto i : users){
+        if(i.User == username){
+            localUser = &i;
+            cout << "Usuario ya existe" << endl;
+            return 0;
+        }
+    }
     user.User = username; //add username to user
+    user.Files = File();
 
     do
     {
