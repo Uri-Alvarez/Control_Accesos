@@ -3,8 +3,7 @@
 using namespace std;
 
 // Estructura que representa a un usuario y su lista de archivos
-s
-truct Users {
+struct Users {
     string User;              // Nombre del usuario
     list<string> Files;       // Lista de archivos del usuario
 };
