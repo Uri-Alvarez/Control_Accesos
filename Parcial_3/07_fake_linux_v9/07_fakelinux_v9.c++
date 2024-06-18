@@ -11,7 +11,9 @@
 
     struct Files {
         string Name;
-        permitions permition;
+        permitions permitionOwner;
+        permitions permitionGroup;
+        permitions permitionOther;
     };
 
     // Estructura que representa a un usuario y su lista de archivos
@@ -62,9 +64,9 @@
                 cout << "Archivos dentro del usuario: ";
                 while (getline(fuser, file_user)) { // Lee el archivo root
                     vector<string> file_info = split(file_user, '|');
-                    if (file_info.size() == 2) {
+                    if (file_info.size() == 4) {
                         tmpfile.Name = file_info[0];
-                        tmpfile.permition = static_cast<permitions>(stoi(file_info[1]));
+                        tmpfile.permitionOwner = static_cast<permitions>(stoi(file_info[1]));
                         user.files.push_back(tmpfile);
                     }
                     else {
@@ -138,7 +140,7 @@
                     case 1: // Listar archivos del usuario actual
                         cout << "Archivos del usuario " << localUser->User << ":" << endl; // Imprime el nombre del usuario
                         for (const auto& file : localUser->files) { // Itera sobre la lista de archivos del usuario
-                            cout << file.Name << " - " << file.permition << "|"; // Imprime el nombre del archivo y sus permisos
+                            cout << file.Name << " - " << file.permitionOwner << "|" << file.permitionGroup << "|" << file.permitionOther << "|"; // Imprime el nombre del archivo y sus permisos
                         }
                         cout << endl << endl; // Imprime dos saltos de línea al final
                         break;
@@ -147,7 +149,9 @@
                         cout << "Ingresa archivo: ";
                         cin >> tmp;
                         tmpfile.Name = tmp;
-                        tmpfile.permition = x;
+                        tmpfile.permitionOwner = x;
+                        tmpfile.permitionGroup = w;
+                        tmpfile.permitionOther = r;
                         localUser->files.push_back(tmpfile); // Añade el nuevo archivo a la lista del usuario
                         break;
 
@@ -190,8 +194,8 @@
             
             for (const auto& file : i.files) 
             {
-                fuser << file.Name << "|" << file.permition << endl;//guarda el nombreArchivo en el archivo
-                cout << "\t" << file.Name << " - " << file.permition << endl;  // Imprime el nombre del archivo y sus permisos
+                fuser << file.Name << "|" << file.permitionOwner << "|" << file.permitionGroup<< "|" << file.permitionOther << endl;//guarda el nombreArchivo en el archivo
+                cout << "\t" << file.Name << " - " << file.permitionOwner << " - " << file.permitionGroup<< " - " << file.permitionOther<< endl;  // Imprime el nombre del archivo y sus permisos
             }
             cout << endl;
             fuser.close(); //cierra archivo
