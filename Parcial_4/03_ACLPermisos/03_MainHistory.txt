@@ -1,0 +1,71 @@
+    1  ps
+    2  cat /etc/psswd
+    3  sudo cat /etc/psswd
+    4  cat /etc/passwd
+    5  sudo groupadd grupo1
+    6  sudo adduser test grupo1
+    7  tail
+    8  tail /etc/passwd
+    9  sudo groups test
+   10  sudo gropudel grupo1
+   11  sudo groupdel grupo1
+   12  groups test
+   13  cat /etc/passwd
+   14  cat /etc/group
+   15  ls
+   16  mkdir c0ntr0l4ccs3zo
+   17  cd c0ntr0l4ccs3zo
+   18  ls
+   19  touch text.txt
+   20  ls
+   21  ls -l
+   22  echo "inserte texto aqui" > text.file
+   23  ls -l
+   24  getfacl text.file
+   25  clear
+   26  ls
+   27  cd c0ntr0l4ccs3zo
+   28  ls
+   29  getfacl text.file
+   30  sudo groupadd gru
+   31  setfacl -m g.gru.rw text.file
+   32  setfacl -m g:gru:rw text.file
+   33  ls -l
+   34  cd c0ntr0l4ccs3zo
+   35  ls -l
+   36  getfacl text.file
+   37  bash
+   38  history
+   39  exit
+   40  history
+   41  cd c0ntr0l4ccs3zo
+   42  ls -l
+   43  chmod o-r text.file
+   44  ls -l
+   45  getfacl text.file
+   46  nan ~/.zshrc
+   47  nano ~/.zshrc
+   48  source ~/.zshrc
+   49  sudo useradd -m margo
+   50  sudo passwd margo
+   51  passwd test
+   52  sudo passwd test
+   53  su margo
+   54  sudo adduser test gru
+   55  su test
+   56  setfacl -m g:gru:r text.file
+   57  getfacl text.file
+   58  history | grep setf
+   59  ls
+   60  ls -l
+   61  chmod o-r text.txt
+   62  ls -l
+   63  getfacl text.txt
+   64  setfacl -m u:margo:r text.txt
+   65  ls -l
+   66  su margo
+   67  su test
+   68  touch latex.file
+   69  ls -l
+   70  getfacl latex.file
+   71  su test
