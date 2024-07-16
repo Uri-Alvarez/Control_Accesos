@@ -1,0 +1,218 @@
+    1  ps
+    2  cat /etc/psswd
+    3  sudo cat /etc/psswd
+    4  cat /etc/passwd
+    5  sudo groupadd grupo1
+    6  sudo adduser test grupo1
+    7  tail
+    8  tail /etc/passwd
+    9  sudo groups test
+   10  sudo gropudel grupo1
+   11  sudo groupdel grupo1
+   12  groups test
+   13  cat /etc/passwd
+   14  cat /etc/group
+   15  ls
+   16  mkdir c0ntr0l4ccs3zo
+   17  cd c0ntr0l4ccs3zo
+   18  ls
+   19  touch text.txt
+   20  ls
+   21  ls -l
+   22  echo "inserte texto aqui" > text.file
+   23  ls -l
+   24  getfacl text.file
+   25  clear
+   26  ls
+   27  cd c0ntr0l4ccs3zo
+   28  ls
+   29  getfacl text.file
+   30  sudo groupadd gru
+   31  setfacl -m g.gru.rw text.file
+   32  setfacl -m g:gru:rw text.file
+   33  ls -l
+   34  cd c0ntr0l4ccs3zo
+   35  ls -l
+   36  getfacl text.file
+   37  bash
+   38  history
+   39  exit
+   40  history
+   41  cd c0ntr0l4ccs3zo
+   42  ls -l
+   43  chmod o-r text.file
+   44  ls -l
+   45  getfacl text.file
+   46  nan ~/.zshrc
+   47  nano ~/.zshrc
+   48  source ~/.zshrc
+   49  sudo useradd -m margo
+   50  sudo passwd margo
+   51  passwd test
+   52  sudo passwd test
+   53  su margo
+   54  sudo adduser test gru
+   55  su test
+   56  setfacl -m g:gru:r text.file
+   57  getfacl text.file
+   58  history | grep setf
+   59  ls
+   60  ls -l
+   61  chmod o-r text.txt
+   62  ls -l
+   63  getfacl text.txt
+   64  setfacl -m u:margo:r text.txt
+   65  ls -l
+   66  su margo
+   67  su test
+   68  touch latex.file
+   69  ls -l
+   70  getfacl latex.file
+   71  su test
+   72  history > history_kali.txt
+   73  ls
+   74  su margo
+   75  ls
+   76  su margo
+   77  cd ..
+   78  exit
+   79  pwd
+   80  mkdir .fonts
+   81  mv Descargas
+   82  mv Descargas/ProFont/*.ttf .fonts
+   83  cd Escritorio
+   84  su margo
+   85  cd ..
+   86  pwd
+   87  su margo
+   88  sh
+   89  bsh
+   90  history
+   91  git --version
+   92  cd Documentos
+   93  ls
+   94  cd Control_Accesos
+   95  git init
+   96  git status
+   97  ls
+   98  cd Control_Accesos
+   99  ls
+  100  git status
+  101  cd Documentos
+  102  cd Control_Accesos
+  103  git add .
+  104  cd Control_Accesos
+  105  git add .
+  106  git commit -m "Subiendo archivos 03 del parcial 4"
+  107  git config --global user.email "cdmx2974@amerike.edu.mx"
+  108  git config --global user.name "Uri"
+  109  git add .
+  110  git commit -m "Subiendo archivos 03 del parcial 4"
+  111  git push
+  112  git status
+  113  git log
+  114  git push
+  115  ls
+  116  ls -a
+  117  nano zshrc
+  118  nano .zshrc.pre-oh-my-zsh
+  119  nano .zshrc
+  120  ls -a
+  121  git clone https://github.com/zsh-users/zsh-syntax-highlightining.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  122  clear
+  123  sudo apt install git
+  124  git clone https://github.com/zsh-users/zsh-syntax-highlightining.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  125  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  126  nano .zshrc
+  127  source .zshrc
+  128  git --version
+  129  git status
+  130  cd ..
+  131  cd /boot/config-$(uname -r)
+  132  cd /boot/config -$(uname -r)
+  133  grep ACL  /boot/config -$(uname -r)
+  134  grep ACL  /boot/config-$(uname -r)
+  135  zgrep ACL/proc/config.gz
+  136  zgrep ACL /proc/config.gz
+  137  grep ACL  /boot/config-$(uname -r)
+  138  uname -r
+  139  tune2fs
+  140  mount
+  141  fdisk -l
+  142  tune2fs -l /dev/nvme0n1
+  143  sudo tune2fs -l /dev/nvme0n1
+  144  sudo fdisk -l
+  145  sudo tune2fs -l /dev/nvme0n1p9
+  146  sudo tune2fs -l /dev/nvme0n1p9 | grep options
+  147  getfacl
+  148  ls
+  149  cd c0ntr0l4ccs3zo
+  150  ls
+  151  ls-
+  152  ls -l
+  153  getfacl text.file
+  154  setfacl -m u:test:rws text.file
+  155  setfacl -m u:margo:rws text.file
+  156  setfacl -m u:margo:rwx text.file
+  157  getfacl text.file
+  158  setfacl -m m::r-- text.file
+  159  getfacl text.file
+  160  setfacl -m m:o:rw- text.file
+  161  setfacl -m o::rw- text.file
+  162  getfacl text.file
+  163  setfacl -m m::r-- text.file
+  164  getfacl text.file
+  165  setfacl -m m::--- text.file
+  166  getfacl text.file
+  167  setfacl -m m::r-- text.file
+  168  getfacl text.file
+  169  setfacl -x m::r-- text.file
+  170  setfacl -x u:margo text.file
+  171  getfacl text.file
+  172  setfacl -x o::--- text.file
+  173  setfacl -m o::--- text.file
+  174  getfacl text.file
+  175  su margo
+  176  sudo setfacl -m u:margo:r-- text.file
+  177  getfacl text.file
+  178  su margo
+  179  setfacl -b text.file
+  180  getfacl text.file
+  181  ls -l
+  182* source .zshrc
+  183* su margo
+  184  mkdir control_amerike
+  185  ls
+  186  ls -l
+  187  setfacl -dm g:gru:r-- text.file
+  188  setfacl -dm g:gru:r-- control_amerike
+  189  ls -l
+  190  getfacl control_amerike
+  191  setfacl -dm g::r-- control_amerike
+  192  getfacl control_amerike
+  193  setfacl -dm o::r-- control_amerike
+  194  getfacl control_amerike
+  195  setfacl -dm u:u
+  196  setfacl -dm u:margo:r-- control_amerike
+  197  setfacl -dm u:margo:rw- control_amerike
+  198  getfacl control_amerike
+  199  setfacl -dm o::--- control_amerike
+  200  getfacl control_amerike
+  201  cd control_amerike
+  202  touch archivo1.txt
+  203  ls -l
+  204  getfacl archivo1.txt
+  205  su margo
+  206  sudo adduser margo gru
+  207  su margo
+  208  setfacl -x u:margo archivo1.txt
+  209  su margo
+  210  setfacl -m u:margo:rw- margo.txt
+  211  setfacl -m u:margo:rw-
+  212  cd ..
+  213  setfacl -m u:margo:rw- control_amerike
+  214  cd control_amerike
+  215  su margo
+  216  nano margo.txt
+  217  setfacl -m u:margo:rw- margo.txt
+  218  su margo

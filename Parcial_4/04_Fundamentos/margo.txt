@@ -1,0 +1,34 @@
+ 1  ls -l
+    2  history
+    3  ps
+    4  sudo setfacl -m u:margo:r-- text.file
+    5  cat text.file
+    6  exit
+    7  cat archivo1.txt
+    8  nano archivo1.txt
+    9  cat archivo1.txt
+   10  group margo
+   11  groups margo
+   12  useradd gru margo
+   13  adduser margo gru
+   14  sudo adduser margo gru
+   15  exit
+   16  groups margo
+   17  ls -l
+   18  cat archivo1.txt
+   19  nano archivo1.txt
+   20  cat archivo1.txt
+   21  setfacl -x u:margo archivo1.txt
+   22  exit
+   23  cat archivo1.txt
+   24  getfacl archivo1.txt
+   25  cat archivo1.txt
+   26  nano archivo1.txt
+   27  cat archivo1.txt
+   28  history > Margo.txt
+   29  exit
+   30  history > Margo.txt
+   31  exit
+   32  history > margo.txt
+   33  history >> margo.txt
+
